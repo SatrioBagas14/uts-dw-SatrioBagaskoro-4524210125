@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Acara Band Musik</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Poster Acara Band Musik</h1>
+  </header>
+
+  <main>
+    
+    <form id="formPoster">
+      <h2>Isi Data Acara</h2>
+
+      <label for="namaBand">Nama Band</label>
+      <input type="text" id="namaBand" placeholder="Contoh: The Weekend Rockers">
+
+      <label for="tglAcara">Tanggal Acara</label>
+      <input type="date" id="tglAcara">
+
+      <label for="lokasiAcara">Lokasi</label>
+      <input type="text" id="lokasiAcara" placeholder="Contoh: Lapangan Kampus">
+
+      <label for="deskripsiAcara">Deskripsi</label>
+      <textarea id="deskripsiAcara" rows="3" placeholder="Tulis sedikit tentang acaranya..."></textarea>
+
+      <label for="tema">Tema Poster</label>
+      <select id="tema">
+        <option value="enerjik">Enerjik (Merah - Oranye)</option>
+        <option value="gelap">Gelap (Hitam - Ungu)</option>
+        <option value="vintage">Vintage (Coklat - Cream)</option>
+      </select>
+    </form>
+
+    
+    <section id="previewPoster" class="enerjik">
+      <h2 id="bandPreview">Nama Band Kamu</h2>
+      <p id="tanggalPreview">Tanggal Acara</p>
+      <p id="lokasiPreview">Lokasi Acara</p>
+      <p id="descPreview">Deskripsi acara akan muncul di sini.</p>
+
+      
+      <img src="./image/gambar.jpg" alt="Foto Band" id="previewImg">
+    </section>
+  </main>
+
+  <footer>
+    <p>UTS Desain Web | Satrio Bagaskoro - 4524210125</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
